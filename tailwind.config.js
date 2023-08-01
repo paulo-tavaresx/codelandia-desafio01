@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-linear': 'linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%)',
+        'gradient-linear-md':
+          'linear-gradient(45deg, #574AE8 0%, #3EA1DB 100%)',
+        'gradient-linear-mobile':
+          'linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%)',
       },
     },
   },
