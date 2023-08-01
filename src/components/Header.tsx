@@ -1,7 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Search from '../../public/search.svg'
-import { Dispatch, SetStateAction, useState } from 'react'
+import { Dispatch, SetStateAction } from 'react'
+
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 type Props = {
   search: string
@@ -24,7 +28,7 @@ export const Header = ({ search, setSearch }: Props) => {
           </div>
 
           <input
-            className="w-full bg-transparent text-[#ffffff80] md:text-lg outline-none"
+            className={`w-full bg-transparent text-[#ffffff80] md:text-lg outline-none ${inter.className}`}
             placeholder="Pesquisar no blog"
             type="search"
             value={search}

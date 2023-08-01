@@ -11,7 +11,7 @@ export const Post = ({ date, title, description }: PostProps) => {
   return (
     <article className="bg-white rounded-md p-6 text-neutral-500 shadow-lg">
       <div className=" flex justify-between items-center mb-7 md:mb-5">
-        <time>{date}</time>
+        <time className="text-sm md:text-base">{date}</time>
 
         <Image src={Like} alt="like" />
       </div>
